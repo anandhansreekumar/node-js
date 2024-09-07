@@ -1,9 +1,13 @@
-const { add, sub } = require("./add");
+// const { add, sub } = require("./add");
+// require("./batman");
 
-const sum = add(1, 2);
-const diff = sub(1, 2);
-
-console.log(sum);
-console.log(diff);
+const superHero = require("./super-hero");
 
 console.log("Hello from index.js");
+
+console.log(superHero.getName());
+superHero.setName("Superman");
+console.log(superHero.getName());
+
+const newSuperHero = require("./super-hero");
+console.log(newSuperHero.getName());

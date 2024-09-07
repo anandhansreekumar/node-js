@@ -1,9 +1,9 @@
-(function iife() {
+(function iife(message) {
   const superHero = "batman";
-  console.log(superHero);
-})();
+  console.log(message, superHero);
+})("hello");
 
-(function iife() {
+(function iife(message) {
   const superHero = "superman";
-  console.log(superHero);
-})();
+  console.log(message, superHero);
+})("hey");
